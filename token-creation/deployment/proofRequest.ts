@@ -18,7 +18,7 @@ const proofRequest = {
         "transaction_data": {
             // - deployed contract address where it will call a specific function
             // <CHANGE THIS>
-            "contract_address": "0x603e34A7b86FD0084b718339C9935e62B63A02ab",
+            "contract_address": "0x603e34A7b86FD0084b718339C9935e62B63A02ab", //"0xeD05AC777229866383bc0c2388472a21a0c1bE3c",
             // - hash of the function name from the ABI - b68967e2 = submitZKPResponse
             "method_id": "b68967e2",
             // - chain id of the network
