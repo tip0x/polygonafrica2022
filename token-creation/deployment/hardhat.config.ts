@@ -4,7 +4,6 @@ import { HardhatUserConfig } from "hardhat/config";
 import "@nomiclabs/hardhat-etherscan";
 import "@nomicfoundation/hardhat-toolbox";
 import dotenv from 'dotenv';
-import "./tsconfig-paths/register";
 // Config
 // ========================================================
 dotenv.config();

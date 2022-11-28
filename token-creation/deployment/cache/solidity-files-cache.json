@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/tiptape/relearningculture/token-creation/deployment/contracts/ERC20Verifier.sol": {
-      "lastModificationDate": 1669605936129,
-      "contentHash": "c02f5879b37eb18465fcfe7ecd347516",
+      "lastModificationDate": 1669669657565,
+      "contentHash": "75ee5b32a462342ac6547c32a55808c9",
       "sourceName": "contracts/ERC20Verifier.sol",
       "solcConfig": {
         "version": "0.8.17",
@@ -38,11 +38,7 @@
         "^0.8.0"
       ],
       "artifacts": [
-        "AdamERC20",
-        "ERC20Verifier",
-        "IChildToken",
-        "StandardToken",
-        "Token"
+        "ERC20Verifier"
       ]
     },
     "/home/tiptape/relearningculture/token-creation/deployment/contracts/lib/GenesisUtils.sol": {

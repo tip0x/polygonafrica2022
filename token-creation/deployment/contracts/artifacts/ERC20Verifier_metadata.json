@@ -6,6 +6,22 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name_",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "symbol_",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -654,6 +670,9 @@
 				"balanceOf(address)": {
 					"details": "See {IERC20-balanceOf}."
 				},
+				"constructor": {
+					"details": "constructor"
+				},
 				"decimals()": {
 					"details": "Returns the number of decimals used to get its user representation. For example, if `decimals` equals `2`, a balance of `505` tokens should be displayed to a user as `5.05` (`505 / 10 ** 2`). Tokens usually opt for a value of 18, imitating the relationship between Ether and Wei. This is the value {ERC20} uses, unless this function is overridden; NOTE: This information is only used for _display_ purposes: it in no way affects any of the arithmetic of the contract, including {IERC20-balanceOf} and {IERC20-transfer}."
 				},
@@ -765,11 +784,11 @@
 			]
 		},
 		"deployment/contracts/ERC20Verifier.sol": {
-			"keccak256": "0xc70f945c62eeebf3e60318c30e80832b18971d82695571d3e7d1381b59e844bf",
+			"keccak256": "0xc268d3f620b134a18ff4e0f3bc7ed5e4468050f465230f1e83d598ac0331ad9e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://02c3b355dbdbe0be8ff42c7775066c54e2dcd30c14888ff524a54a69d81db5f3",
-				"dweb:/ipfs/QmddAARy6nzrcpFDjXeZ4wc7CUoHKSP14TxWEHncCwCShu"
+				"bzz-raw://a42050f78e7797ef9229367c06d9eabf9053918a7d69b8086a53089ec4a7d92f",
+				"dweb:/ipfs/QmNsPyZt49ts3ZwWaBJ59twTGwQRNLuwr9mmKB1SXm45th"
 			]
 		},
 		"deployment/contracts/interfaces/ICircuitValidator.sol": {

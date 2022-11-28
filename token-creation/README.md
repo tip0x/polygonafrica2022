@@ -51,3 +51,6 @@ Necessary but short introduction to give overview of the purpose and importance 
 
 #### connect
 * https://twitter.com/tiptape0
+
+
+0x3F271dc0aF47Edc9b74156a0EDe9E8cA100DFA69//erc20
