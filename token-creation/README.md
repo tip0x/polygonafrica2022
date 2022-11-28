@@ -50,4 +50,4 @@ Necessary but short introduction to give overview of the purpose and importance 
 * https://github.com/codingwithmanny/polygonid-on-chain-verification/
 
 #### connect
-* `https://twitter.com/tiptape0`
+* https://twitter.com/tiptape0
