@@ -18,7 +18,7 @@ const proofRequest = {
         "transaction_data": {
             // - deployed contract address where it will call a specific function
             // <CHANGE THIS>
-            "contract_address": "0xeD05AC777229866383bc0c2388472a21a0c1bE3c",
+            "contract_address": "0x603e34A7b86FD0084b718339C9935e62B63A02ab",
             // - hash of the function name from the ABI - b68967e2 = submitZKPResponse
             "method_id": "b68967e2",
             // - chain id of the network
@@ -49,14 +49,14 @@ const proofRequest = {
                         "req": {
                             "Date": {
                                 // NOTE: this value needs to match the erc20ZkpRequest.ts L34 or erc721ZkpRequest.ts L34
-                                "$lt": 20020101
+                                "$lt": 20041127
                             }
                         },
                         // - schema of the proof and type, type is case-sensitive
                         // <CHANGE THIS>
                         "schema": {
-                            "url": "https://s3.eu-west-1.amazonaws.com/polygonid-schemas/c79191fc-c84e-4203-bb72-4d354839cfb7.json-ld",
-                            "type": "KYCagecredential"
+                            "url": "https://s3.eu-west-1.amazonaws.com/polygonid-schemas/c5603cb6-3dd1-4351-b159-97d26cd2b9a1.json-ld", //"https://s3.eu-west-1.amazonaws.com/polygonid-schemas/c79191fc-c84e-4203-bb72-4d354839cfb7.json-ld",
+                            "type": "SaddamzkERC20"
                         }
                     }
                 }

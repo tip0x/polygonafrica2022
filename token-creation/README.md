@@ -17,9 +17,7 @@ Necessary but short introduction to give overview of the purpose and importance 
 * CONTRACT ADDRESS: 
 - [X] ChildChainManagerProxy (mumbai) : `0xDD6BC4108B9A62a8487ff118107A147e958A1739`  
 
-<!-- 0xb5505a6d998549090530911180f38aC5130101c6 - zkevm address-->
-
-- [X] AdamERC20(ChildChain): `0xe157bF0a74ccc5c2C7D3d8a29Ab0e6cae0e0290a`
+- [X] AdamERC20(ChildChain): `0x603e34A7b86FD0084b718339C9935e62B63A02ab` //mumbai
 
 ### Contract Deployments
 * Install dependency `@remix-project/remixd`
