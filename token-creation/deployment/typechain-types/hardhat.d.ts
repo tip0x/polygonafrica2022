@@ -33,46 +33,6 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IERC20__factory>;
     getContractFactory(
-      name: "ERC721",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ERC721__factory>;
-    getContractFactory(
-      name: "IERC721Metadata",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IERC721Metadata__factory>;
-    getContractFactory(
-      name: "IERC721",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IERC721__factory>;
-    getContractFactory(
-      name: "IERC721Receiver",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IERC721Receiver__factory>;
-    getContractFactory(
-      name: "ERC165",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ERC165__factory>;
-    getContractFactory(
-      name: "IERC165",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IERC165__factory>;
-    getContractFactory(
-      name: "AdamERC20",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.AdamERC20__factory>;
-    getContractFactory(
-      name: "IChildToken",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IChildToken__factory>;
-    getContractFactory(
-      name: "StandardToken",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.StandardToken__factory>;
-    getContractFactory(
-      name: "Token",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.Token__factory>;
-    getContractFactory(
       name: "PrimeToadToken",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.PrimeToadToken__factory>;
@@ -84,10 +44,6 @@ declare module "hardhat/types/runtime" {
       name: "IZKPVerifier",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IZKPVerifier__factory>;
-    getContractFactory(
-      name: "ToadVerifier",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ToadVerifier__factory>;
     getContractFactory(
       name: "ZKPVerifier",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -119,56 +75,6 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.IERC20>;
     getContractAt(
-      name: "ERC721",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.ERC721>;
-    getContractAt(
-      name: "IERC721Metadata",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.IERC721Metadata>;
-    getContractAt(
-      name: "IERC721",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.IERC721>;
-    getContractAt(
-      name: "IERC721Receiver",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.IERC721Receiver>;
-    getContractAt(
-      name: "ERC165",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.ERC165>;
-    getContractAt(
-      name: "IERC165",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.IERC165>;
-    getContractAt(
-      name: "AdamERC20",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.AdamERC20>;
-    getContractAt(
-      name: "IChildToken",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.IChildToken>;
-    getContractAt(
-      name: "StandardToken",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.StandardToken>;
-    getContractAt(
-      name: "Token",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.Token>;
-    getContractAt(
       name: "PrimeToadToken",
       address: string,
       signer?: ethers.Signer
@@ -183,11 +89,6 @@ declare module "hardhat/types/runtime" {
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.IZKPVerifier>;
-    getContractAt(
-      name: "ToadVerifier",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.ToadVerifier>;
     getContractAt(
       name: "ZKPVerifier",
       address: string,

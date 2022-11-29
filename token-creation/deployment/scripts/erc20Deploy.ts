@@ -6,9 +6,9 @@ import { ethers } from "hardhat";
 // ========================================================
 const main = async () => {
   // Replace these variables as needed  
-  const verifierContract = "ERC20Verifier";
-  const verifierName = "ERC20zkAirdrop";
-  const verifierSymbol = "zkERC20";
+  const verifierContract = "PrimeToadToken";
+  const verifierName = "Prime Toad Token";
+  const verifierSymbol = "PTT";
 
   // Deploy contract
   const ERC20Verifier = await ethers.getContractFactory(verifierContract);

@@ -2,7 +2,5 @@
 /* tslint:disable */
 /* eslint-disable */
 export * as erc20VerifierSol from "./ERC20Verifier.sol";
-export * as customContract from "./custom-contract";
 export * as interfaces from "./interfaces";
 export * as verifiers from "./verifiers";
-export { ToadVerifier__factory } from "./ToadVerifier__factory";
