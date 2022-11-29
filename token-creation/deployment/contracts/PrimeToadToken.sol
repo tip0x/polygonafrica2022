@@ -6,7 +6,7 @@ import "./interfaces/ICircuitValidator.sol";
 import "./verifiers/ZKPVerifier.sol";
 import "./StandardToken.sol";
 
-abstract contract ERC20Verifier is StandardToken, ZKPVerifier {
+abstract contract PTTVerifier is StandardToken, ZKPVerifier {
 
     receive() external payable {
         //if ether is sent to this address, send it back.
