@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.0;
 
-import "../extension/IChildToken.sol";
+import "./IChildToken.sol";
 
 abstract   contract StandardToken is Token {
 

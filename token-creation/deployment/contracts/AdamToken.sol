@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: Unlicensed
 
 pragma solidity ^0.8.0;
-import "./utils/lib/GenesisUtils.sol";
-import "./utils/interfaces/ICircuitValidator.sol";
-import "./utils/verifiers/ZKPVerifier.sol";
+import "./lib/GenesisUtils.sol";
+import "./interfaces/ICircuitValidator.sol";
+import "./verifiers/ZKPVerifier.sol";
 import "./StandardToken.sol";
 
 abstract contract ERC20Verifier is StandardToken, ZKPVerifier {
