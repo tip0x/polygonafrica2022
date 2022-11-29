@@ -21,8 +21,8 @@ const config: HardhatUserConfig = {
     }
   },
   networks: {
-    mumbai: {
-      url: `${process.env.RPC_MUMBAI_URL || ''}`,
+    zkEVM: {
+      url: `${process.env.RPC_ZKEVM_URL || ''}`,
       accounts: process.env.WALLET_PRIVATE_KEY
         ? [`0x${process.env.WALLET_PRIVATE_KEY}`]
         : [],
@@ -30,7 +30,7 @@ const config: HardhatUserConfig = {
     }
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY || undefined,
+    apiKey: process.env.ZKEVM_API_KEY || undefined,
   },
 };
 

@@ -1,46 +1,6 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/tiptape/relearningculture/token-creation/deployment/contracts/ERC20Verifier.sol": {
-      "lastModificationDate": 1669669657565,
-      "contentHash": "75ee5b32a462342ac6547c32a55808c9",
-      "sourceName": "contracts/ERC20Verifier.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
-        "./lib/GenesisUtils.sol",
-        "./interfaces/ICircuitValidator.sol",
-        "./verifiers/ZKPVerifier.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "ERC20Verifier"
-      ]
-    },
     "/home/tiptape/relearningculture/token-creation/deployment/contracts/lib/GenesisUtils.sol": {
       "lastModificationDate": 1669550074228,
       "contentHash": "fbd4296c97b0aa1c7964eda1879458b6",
@@ -701,47 +661,6 @@
         "IERC165"
       ]
     },
-    "/home/tiptape/relearningculture/token-creation/deployment/contracts/ERC721Verifier.sol": {
-      "lastModificationDate": 1669550074224,
-      "contentHash": "88d43b187cfe25839b083ebd7fabd850",
-      "sourceName": "contracts/ERC721Verifier.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/token/ERC721/ERC721.sol",
-        "@openzeppelin/contracts/utils/Counters.sol",
-        "./lib/GenesisUtils.sol",
-        "./interfaces/ICircuitValidator.sol",
-        "./verifiers/ZKPVerifier.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "ERC721Verifier"
-      ]
-    },
     "/home/tiptape/relearningculture/token-creation/deployment/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
       "lastModificationDate": 1669550075872,
       "contentHash": "74654e3ae5d7f39555055dfe244dab7a",
@@ -813,6 +732,46 @@
         "IChildToken",
         "StandardToken",
         "Token"
+      ]
+    },
+    "/home/tiptape/relearningculture/token-creation/deployment/contracts/ToadVerifier.sol": {
+      "lastModificationDate": 1669728441438,
+      "contentHash": "b4ad1b7500870812ac05316e957131af",
+      "sourceName": "contracts/ToadVerifier.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "./lib/GenesisUtils.sol",
+        "./interfaces/ICircuitValidator.sol",
+        "./verifiers/ZKPVerifier.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ToadVerifier"
       ]
     }
   }

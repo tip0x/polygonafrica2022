@@ -22,9 +22,9 @@ const proofRequest = {
             // - hash of the function name from the ABI - b68967e2 = submitZKPResponse
             "method_id": "b68967e2",
             // - chain id of the network
-            "chain_id": 80001,
+            "chain_id": 1402,
             // - network name
-            "network": "polygon-mumbai"
+            "network": "polygon-zkevm"
         },
         // Reason for the request
         // - Unknown if used or not
