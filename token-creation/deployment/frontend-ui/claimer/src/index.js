@@ -43,7 +43,7 @@ const qrProofRequestJson = {
             },
             schema: {
               url:
-                "https://s3.eu-west-1.amazonaws.com/polygonid-schemas/d2a60f64-f309-4fe7-9c2d-94218b07e899.json-ld", //"https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json-ld/kyc-v2.json-ld",
+                "https://s3.eu-west-1.amazonaws.com/polygonid-schemas/d2a60f64-f309-4fe7-9c2d-94218b07e899.json-ld",
               type: "ProofofPersonHood"
             }
           }
@@ -60,19 +60,19 @@ export default class App extends React.Component {
     return (
       <div style={styles.root}>
         <h2 style={styles.title}>
-          Claim $ADAM token zk airdrop on Polygon Zero Knowledge EVM
+          Claim $ADAM token airdrop on Polygon Mumbai
         </h2>
         <p>
-          Proof of PersonHood: You must prove you are part of polygon community to claim.
+          Proof of Person: You must prove your authenticaton of existence.
         </p>
         <p>
-          Complete identity verification by issuing yourself a Polygon ID claim via{" "}
+          Complete proof of personhood verification by issuing yourself a Polygon ID claim via{" "}
           <a
-            href="https://polygontechnology.notion.site/Issue-yourself-a-KYC-Age-Credential-claim-a06a6fe048c34115a3d22d7d1ea315ea"
+            href="https://platform-test.polygonid.com/claim-link/f5d16d9e-6cda-40a9-8737-1ab623318037"
             target="_blank"
             rel="noreferrer"
           >
-            Proof of PersonHood
+            Prime Toad Project
           </a>{" "}
           then scan QR code within Polygon ID app to claim tokens
         </p>
@@ -86,13 +86,21 @@ export default class App extends React.Component {
         </div>
         <br />
         <p>
-          zkEVM POE Explorer:{" "}
+          Twitter:{" "}
           <a
-            href={`https://mumbai.polygonscan.com/address/${deployedContractAddress}`}
-            target="_blank"
-            rel="noreferrer"
+            href="https://twitter.com/tiptape0"
+            target="_blank" rel="noreferrer"
           >
-            Saddamzk-ERC20 $ADAM token zk airdrop
+            tiptape0
+          </a>
+        </p>
+        <p>
+          Polygonscan:{" "}
+          <a
+            href={`https://mumbai.polygonscan.com/token/${deployedContractAddress}`}
+            target="_blank" rel="noreferrer"
+          >
+            $ADAM airdrop
           </a>
         </p>
       </div>

@@ -55,7 +55,7 @@ const proofRequest = {
                         // - schema of the proof and type, type is case-sensitive
                         // <CHANGE THIS>
                         "schema": {
-                            "url": "https://s3.eu-west-1.amazonaws.com/polygonid-schemas/d2a60f64-f309-4fe7-9c2d-94218b07e899.json-ld", //"https://s3.eu-west-1.amazonaws.com/polygonid-schemas/c79191fc-c84e-4203-bb72-4d354839cfb7.json-ld",
+                            "url": "://s3.eu-west-1.amazonaws.com/polygonid-schemas/d2a60f64-f309-4fe7-9c2d-94218b07e899.json-ld", 
                             "type": "ProofofPersonHood"
                         }
                     }
