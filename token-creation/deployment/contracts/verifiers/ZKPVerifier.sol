@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 // Imports
 // ========================================================
-import "./utils/Ownable.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 import "../interfaces/ICircuitValidator.sol";
 import "../interfaces/IZKPVerifier.sol";
 
