@@ -19,8 +19,9 @@ contract PrimeToadToken is ERC20, ERC20Burnable, Ownable, ZKPVerifier {
     mapping(address => uint256) public addressToId;
 
 
-    constructor() ERC20("Prime Toad Token", "PTT") {
-        _mint(msg.sender, 1000000 * 10 ** decimals());
+    constructor(address owner) ERC20("Prime Toad Token", "PTT") {
+        owner = payable(msg.sender);
+        _mint(owner, 1000000 * 10 ** decimals());
     }
 
     /**
