@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/tiptape/relearningculture/token-creation/deployment/contracts/ERC20Verifier.sol": {
-      "lastModificationDate": 1669743485739,
-      "contentHash": "11cd5831bc837e8ad7ec9fabf80b7014",
+      "lastModificationDate": 1669743897300,
+      "contentHash": "14acccd50a9133a4d5475095ddf9cee7",
       "sourceName": "contracts/ERC20Verifier.sol",
       "solcConfig": {
         "version": "0.8.0",
