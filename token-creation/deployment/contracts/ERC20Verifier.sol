@@ -23,7 +23,6 @@ contract PrimeToadToken is ERC20, ERC20Burnable, Ownable, ZKPVerifier {
         _mint(msg.sender, amount * 10 ** decimals());
     }
 
-
     /**
      * @dev _beforeProofSubmit
      */
