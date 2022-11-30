@@ -14,7 +14,7 @@ const styles = {
 };
 
 // update with your contract address
-const deployedContractAddress = "0xe2F822232e4723C11fE6b63A75615Cdf4C85E168";
+const deployedContractAddress = "0x603e34A7b86FD0084b718339C9935e62B63A02ab";
 
 // more info on query based requests: https://0xpolygonid.github.io/tutorials/wallet/proof-generation/types-of-auth-requests-and-proofs/#query-based-request
 const qrProofRequestJson = {
@@ -25,8 +25,8 @@ const qrProofRequestJson = {
     transaction_data: {
       contract_address: deployedContractAddress,
       method_id: "b68967e2",
-      chain_id: 80001,
-      network: "polygon-mumbai"
+      chain_id: 1402,
+      network: "zkevm"
     },
     reason: "airdrop participation",
     scope: [
@@ -38,13 +38,13 @@ const qrProofRequestJson = {
             allowed_issuers: ["*"],
             req: {
               VerifiedPerson: {
-                $eq: 1
+                $in: 4
               }
             },
             schema: {
               url:
-                "https://s3.eu-west-1.amazonaws.com/polygonid-schemas/d2a60f64-f309-4fe7-9c2d-94218b07e899.json-ld",
-              type: "ProofofPersonHood"
+                "https://s3.eu-west-1.amazonaws.com/polygonid-schemas/3a21c41d-3cdf-40fd-a872-5a9527def918.json-ld",
+              type: "POLYGONDAOMEMBER"
             }
           }
         }
@@ -68,7 +68,7 @@ export default class App extends React.Component {
         <p>
           Complete proof of personhood verification by issuing yourself a Polygon ID claim via{" "}
           <a
-            href="https://platform-test.polygonid.com/claim-link/f5d16d9e-6cda-40a9-8737-1ab623318037"
+            href="https://platform-test.polygonid.com/claim-link/20e11a0a-a4c4-438a-afea-f2fd0ff2cf1d"
             target="_blank"
             rel="noreferrer"
           >
