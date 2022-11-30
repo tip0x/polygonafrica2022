@@ -18,13 +18,13 @@ const proofRequest = {
         "transaction_data": {
             // - deployed contract address where it will call a specific function
             // <CHANGE THIS>
-            "contract_address": "0xe2F822232e4723C11fE6b63A75615Cdf4C85E168", //"0xeD05AC777229866383bc0c2388472a21a0c1bE3c",
+            "contract_address": "0x603e34A7b86FD0084b718339C9935e62B63A02ab",
             // - hash of the function name from the ABI - b68967e2 = submitZKPResponse
             "method_id": "b68967e2",
             // - chain id of the network
             "chain_id": 1402,
             // - network name
-            "network": "polygon-zkevm"
+            "network": "zkevm"
         },
         // Reason for the request
         // - Unknown if used or not
@@ -47,16 +47,16 @@ const proofRequest = {
                         ],
                         // - conditions to be met with zk-query-language - see https://0xpolygonid.github.io/tutorials/verifier/verification-library/zk-query-language/
                         "req": {
-                            "VerifiedPerson": {
+                            "Role": {
                                 // NOTE: this value needs to match the erc20ZkpRequest.ts L34 or erc721ZkpRequest.ts L34
-                                "$eq": 1
+                                "$in": 4
                             }
                         },
                         // - schema of the proof and type, type is case-sensitive
                         // <CHANGE THIS>
                         "schema": {
-                            "url": "://s3.eu-west-1.amazonaws.com/polygonid-schemas/d2a60f64-f309-4fe7-9c2d-94218b07e899.json-ld", 
-                            "type": "ProofofPersonHood"
+                            "url": "https://s3.eu-west-1.amazonaws.com/polygonid-schemas/3a21c41d-3cdf-40fd-a872-5a9527def918.json-ld", 
+                            "type": "POLYGONDAOMEMBER"
                         }
                     }
                 }

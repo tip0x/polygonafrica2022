@@ -22,5 +22,7 @@ export type { ICircuitValidator } from "./contracts/interfaces/ICircuitValidator
 export { ICircuitValidator__factory } from "./factories/contracts/interfaces/ICircuitValidator__factory";
 export type { IZKPVerifier } from "./contracts/interfaces/IZKPVerifier";
 export { IZKPVerifier__factory } from "./factories/contracts/interfaces/IZKPVerifier__factory";
+export type { PTTVerifier } from "./contracts/PTTVerifier";
+export { PTTVerifier__factory } from "./factories/contracts/PTTVerifier__factory";
 export type { ZKPVerifier } from "./contracts/verifiers/ZKPVerifier";
 export { ZKPVerifier__factory } from "./factories/contracts/verifiers/ZKPVerifier__factory";

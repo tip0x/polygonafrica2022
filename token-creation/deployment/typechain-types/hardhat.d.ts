@@ -45,6 +45,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IZKPVerifier__factory>;
     getContractFactory(
+      name: "PTTVerifier",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.PTTVerifier__factory>;
+    getContractFactory(
       name: "ZKPVerifier",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.ZKPVerifier__factory>;
@@ -89,6 +93,11 @@ declare module "hardhat/types/runtime" {
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.IZKPVerifier>;
+    getContractAt(
+      name: "PTTVerifier",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.PTTVerifier>;
     getContractAt(
       name: "ZKPVerifier",
       address: string,

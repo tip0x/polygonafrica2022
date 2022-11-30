@@ -4,3 +4,4 @@
 export * as erc20VerifierSol from "./ERC20Verifier.sol";
 export * as interfaces from "./interfaces";
 export * as verifiers from "./verifiers";
+export { PTTVerifier__factory } from "./PTTVerifier__factory";
