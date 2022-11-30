@@ -23,14 +23,9 @@ Necessary but short introduction to give overview of the purpose and importance 
 
 #### PTTVerifier Contract Description
 
-- [X] PTTVerifier contract is verified and published on zkevm public testnet explorer *https://explorer.public.zkevm-test.net/address/0x603e34A7b86FD0084b718339C9935e62B63A02ab*
+- [X] PTTVerifier contract is a standard ERC20 verified and published on zkevm public testnet explorer *https://explorer.public.zkevm-test.net/address/0x603e34A7b86FD0084b718339C9935e62B63A02ab*
 
 - [X] `_beforeproofsubmit`, `_afterproofsubmit` and  `_beforetokentransfer` functions are present in the token contract to trigger imported `ZKPverifier` to return `SubmitZKPResponse` 
-
-- [X] The AdamERC20 token was deployed with a childChainManager function on mumbai with one thing in mind, Supposedly the token is intended to be transfered to layer 1, and requires RootChain for mapping request, only the ChildChainManagerProxy address has the right to call the deposit function.
-
-- [X] Mint function is called outside constructors argument as required by standard POS child contract and is an internal function (This gets called by deposit function internally)
-
 ### Network Configuration
 *   zkEVM public testnet
 *   RPC: `https://public.zkevm-test.net:2083`
