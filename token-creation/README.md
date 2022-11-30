@@ -3,7 +3,7 @@
 ## INTRODUCTION
 Necessary but short introduction to give overview of the purpose and importance of implementing polygonID zero knowledge self-sovereign identity in deploying custom created tokens.
 ### INSTRUCTIONS
-* To transact token across multiple wallet, you need;
+* To transact token across multiple wallet, you need to;
 
 - [X] Install PolygonID & Metamask in your device
 - [X] Complete identity verification by issuing yourself a Polygon ID claim via *https://polygontechnology.notion.site/Issue-yourself-a-KYC-Age-Credential-claim-a06a6fe048c34115a3d22d7d1ea315ea*
