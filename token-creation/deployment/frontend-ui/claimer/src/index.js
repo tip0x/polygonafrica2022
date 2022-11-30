@@ -60,13 +60,13 @@ export default class App extends React.Component {
     return (
       <div style={styles.root}>
         <h2 style={styles.title}>
-          Claim $ADAM token airdrop on Polygon Mumbai
+          Claim Prime Toad Token ($PTT) airdrop on Polygon zkEVM
         </h2>
         <p>
-          Proof of Person: You must prove your authenticaton of existence.
+          Mode of Verification: You must prove your role as a polygon DAO member to be eligible to mint token.
         </p>
         <p>
-          Complete proof of personhood verification by issuing yourself a Polygon ID claim via{" "}
+          Complete proof of polygon DAO member by issuing yourself a Polygon ID claim via{" "}
           <a
             href="https://platform-test.polygonid.com/claim-link/20e11a0a-a4c4-438a-afea-f2fd0ff2cf1d"
             target="_blank"
@@ -74,7 +74,9 @@ export default class App extends React.Component {
           >
             Prime Toad Project
           </a>{" "}
-          then scan QR code within Polygon ID app to claim tokens
+          </p>
+          <p>
+          then scan this QR code within Polygon ID app to claim tokens
         </p>
 
         <div>
@@ -86,7 +88,16 @@ export default class App extends React.Component {
         </div>
         <br />
         <p>
-          Twitter:{" "}
+          zkEVM blockscout:{" "}
+          <a
+            href={`https://explorer.public.zkevm-test.net/address/${deployedContractAddress}`}
+            target="_blank" rel="noreferrer"
+          >
+            $PTT Scan
+          </a>
+        </p>
+        <p>
+          Project Team Lead:{" "}
           <a
             href="https://twitter.com/tiptape0"
             target="_blank" rel="noreferrer"
@@ -94,15 +105,7 @@ export default class App extends React.Component {
             tiptape0
           </a>
         </p>
-        <p>
-          Polygonscan:{" "}
-          <a
-            href={`https://mumbai.polygonscan.com/token/${deployedContractAddress}`}
-            target="_blank" rel="noreferrer"
-          >
-            $ADAM airdrop
-          </a>
-        </p>
+        
       </div>
     );
   }
