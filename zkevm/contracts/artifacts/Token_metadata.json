@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.0+commit.c7dfd78e"
 	},
 	"language": "Solidity",
 	"output": {
@@ -202,9 +202,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ChildToken.sol": "Token"
+			"RootToken.sol": "Token"
 		},
-		"evmVersion": "london",
+		"evmVersion": "istanbul",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -216,12 +216,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"ChildToken.sol": {
-			"keccak256": "0x7cc427171ec7798e6f3dfe83dfefa2f6ef22e6175959a43b74b1af5857bf784b",
+		"RootToken.sol": {
+			"keccak256": "0x3b2543ac32d3830f2abbcf27fee6a2926e8722336d731c638007175c4f05e1a2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://519d7ce0ded5597264dbb7ab89f3e82d1654fb674f249a0ec3ea0092bef60cbe",
-				"dweb:/ipfs/QmXBzLh9QaEFr5QGx1BiBthLHwV5CuGy8n9RMyKL1rrgkR"
+				"bzz-raw://390ebf9dd8734968efdafe6aff534bb1a8426c1a5f3691a1623c25121b420b2c",
+				"dweb:/ipfs/QmdTeJLv4JumJB2Hv4cGJgkS8frM3u8kncWKekYYVtWWFd"
 			]
 		}
 	},
