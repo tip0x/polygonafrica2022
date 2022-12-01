@@ -1,5 +1,5 @@
-# Matic PoS (Proof-of-Stake) portal contracts
-## INTODUCTION
+# POLYGON ZERO-KNOWLEDGE ETHEREUM VIRTUAL MACHINE IMPLEMENTATION
+## INTRODUCTION
 Polygon zkEVM is the first zero-knowledge (ZK) scaling solution that's fully compatible with Ethereum. All existing smart contracts and wallets work seamlessly within Polygon's zkEVM.
 The zkEVM harnesses the power of ZK proofs to reduce transaction costs and massively increase throughput, all while inheriting near proximal security to Ethereum's Layer 1.
 #### TOKEN INFORMATION
