@@ -18,12 +18,12 @@ const main = async () => {
 
     // CHANGE THESE
     // Contract name when deployed
-    const verifierContract = "PTTVerifier";
+    const verifierContract = "PrimeToadIDVerifier";
     // Schema has provided by the issuer
     // - typically found in https://platform-test.polygonid.com/claiming/created-schemas
-    const schemaHash = "3c8a698166d49288810ea33a047eac47"; // extracted from PID Platform
+    const schemaHash = "002cd84857d79290c64dc0cee51503ff"; // extracted from PID Platform
     // Deployed contract address
-    const PTTVerifierAddress = "0x73C73978cf5b81799AD589Ff22E1A2e9352D8e33";
+    const PTTVerifierAddress = "0xA08fAA759Dc286611e6a1c42c857F6022A7bbcf0";
     const schemaEnd = fromLittleEndian(hexToBytes(schemaHash));
     const query = {
         schema: ethers.BigNumber.from(schemaEnd),
@@ -35,21 +35,21 @@ const main = async () => {
         // 3 = greater-than
         // 4 = in
         // 5 = not-in
-        operator: 4,
+        operator: 1,
         // 20020101 refers to the numerical date we're using for our proof request
         // - see proofRequest.ts L489
-        value: [1, 2, 3, 4, ...new Array(63).fill(0).map(i => 0)], // the value must be 1 = true
+        value: [1, ...new Array(63).fill(0).map(i => 0)], // the value must be 1 = true
         circuitId,
     };
 
     // Retrieve contract to interact with it
-    const erc20Verifier = await ethers.getContractAt(verifierContract, PTTVerifierAddress);
+    const tokenVerifier = await ethers.getContractAt(verifierContract, PTTVerifierAddress);
 
     // Set zkpRequest for contract
     try {
         // Use as a means to keep track in the contract for number of mints a person can perform from a specific wallet address
-        const requestId = Number(await erc20Verifier.TRANSFER_REQUEST_ID());
-        const tx = await erc20Verifier.setZKPRequest(
+        const requestId = Number(await tokenVerifier.TRANSFER_REQUEST_ID());
+        const tx = await tokenVerifier.setZKPRequest(
             requestId, // 1
             validatorAddress,
             query

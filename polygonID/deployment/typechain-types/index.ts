@@ -16,13 +16,13 @@ export type { IERC20Metadata } from "./@openzeppelin/contracts/token/ERC20/exten
 export { IERC20Metadata__factory } from "./factories/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata__factory";
 export type { IERC20 } from "./@openzeppelin/contracts/token/ERC20/IERC20";
 export { IERC20__factory } from "./factories/@openzeppelin/contracts/token/ERC20/IERC20__factory";
-export type { PrimeToadToken } from "./contracts/ERC20Verifier.sol/PrimeToadToken";
-export { PrimeToadToken__factory } from "./factories/contracts/ERC20Verifier.sol/PrimeToadToken__factory";
 export type { ICircuitValidator } from "./contracts/interfaces/ICircuitValidator";
 export { ICircuitValidator__factory } from "./factories/contracts/interfaces/ICircuitValidator__factory";
 export type { IZKPVerifier } from "./contracts/interfaces/IZKPVerifier";
 export { IZKPVerifier__factory } from "./factories/contracts/interfaces/IZKPVerifier__factory";
-export type { PTTVerifier } from "./contracts/PTTVerifier";
-export { PTTVerifier__factory } from "./factories/contracts/PTTVerifier__factory";
+export type { PrimeToadIDVerifier } from "./contracts/PTTVerifier.sol/PrimeToadIDVerifier";
+export { PrimeToadIDVerifier__factory } from "./factories/contracts/PTTVerifier.sol/PrimeToadIDVerifier__factory";
+export type { PTTVerifier } from "./contracts/PTTVerifier.sol/PTTVerifier";
+export { PTTVerifier__factory } from "./factories/contracts/PTTVerifier.sol/PTTVerifier__factory";
 export type { ZKPVerifier } from "./contracts/verifiers/ZKPVerifier";
 export { ZKPVerifier__factory } from "./factories/contracts/verifiers/ZKPVerifier__factory";

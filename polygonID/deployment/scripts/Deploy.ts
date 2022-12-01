@@ -6,20 +6,20 @@ import { ethers } from "hardhat";
 // ========================================================
 const main = async () => {
   // Replace these variables as needed  
-  const verifierContract = "PTTVerifier";
-  const verifierName = "PrimeToadToken";
+  const verifierContract = "PrimeToadIDVerifier";
+  const verifierName = "PrimeToadTokenID";
   const verifierSymbol = "PTT";
 
   // Deploy contract
   const PTTVerifier = await ethers.getContractFactory(verifierContract);
-  const erc20Verifier = await PTTVerifier.deploy(
+  const tokenVerifier = await PTTVerifier.deploy(
     verifierName,
     verifierSymbol
   );
-  await erc20Verifier.deployed();
+  await tokenVerifier.deployed();
 
   // Output result
-  console.log(`${verifierName} deployed to ${erc20Verifier.address}`);
+  console.log(`${verifierName} deployed to ${tokenVerifier.address}`);
 }
 
 // Init

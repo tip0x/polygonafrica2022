@@ -48,7 +48,7 @@ const App = () => {
       window.web3 = new Web3(window.web3.currentProvider);
     } else {
       window.alert(
-        "Non-Ethereum browser detected. You should consider trying MetaMask!"
+        "Non-Ethereum browser detected. You should consider installing MetaMask!"
       );
     }
   };
@@ -120,10 +120,10 @@ const App = () => {
     const maticPoSClient = posClientParent();
     const x = inputValue * 1000000000000000000; // 18 decimals
     const x1 = x.toString();
-    await maticPoSClient.approveERC20ForDeposit(config.posRootERC20, x1, {
+    await maticPoSClient.approveERC20ForDeposit(config.PTTRootToken, x1, {
       from: account,
     });
-    await maticPoSClient.depositERC20ForUser(config.posRootERC20, account, x1, {
+    await maticPoSClient.depositERC20ForUser(config.PTTRootToken, account, x1, {
       from: account,
     });
   };
@@ -133,7 +133,7 @@ const App = () => {
     const x = inputValue * 1000000000000000000;
     const x1 = x.toString();
     await maticPoSClient
-      .burnERC20(config.posChildERC20, x1, {
+      .burnERC20(config.PTTChildToken, x1, {
         from: account,
       })
       .then((res) => {
@@ -213,8 +213,8 @@ const App = () => {
           <br />
             <label for="erc20-pos-inputValue">
               {Networkid !== 0 && Networkid === config.ETH_CHAINID
-                ? `Amount of tokens to deposit or burn transaction hash to exit`
-                : `Amount of tokens to burn`}
+                ? `Amount of tokens to be deposited or burnt transaction hash to exit`
+                : `Amount of tokens to be burnt`}
           </label>
           <input
               id="erc20-pos-inputValue"

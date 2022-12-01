@@ -33,10 +33,6 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IERC20__factory>;
     getContractFactory(
-      name: "PrimeToadToken",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.PrimeToadToken__factory>;
-    getContractFactory(
       name: "ICircuitValidator",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.ICircuitValidator__factory>;
@@ -44,6 +40,10 @@ declare module "hardhat/types/runtime" {
       name: "IZKPVerifier",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IZKPVerifier__factory>;
+    getContractFactory(
+      name: "PrimeToadIDVerifier",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.PrimeToadIDVerifier__factory>;
     getContractFactory(
       name: "PTTVerifier",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -79,11 +79,6 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.IERC20>;
     getContractAt(
-      name: "PrimeToadToken",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.PrimeToadToken>;
-    getContractAt(
       name: "ICircuitValidator",
       address: string,
       signer?: ethers.Signer
@@ -93,6 +88,11 @@ declare module "hardhat/types/runtime" {
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.IZKPVerifier>;
+    getContractAt(
+      name: "PrimeToadIDVerifier",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.PrimeToadIDVerifier>;
     getContractAt(
       name: "PTTVerifier",
       address: string,

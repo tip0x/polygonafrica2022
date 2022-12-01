@@ -10,7 +10,7 @@ import "./lib/GenesisUtils.sol";
 import "./interfaces/ICircuitValidator.sol";
 import "./verifiers/ZKPVerifier.sol";
 
-contract PTTVerifier is ERC20, ZKPVerifier {
+contract PrimeToadIDVerifier is ERC20, ZKPVerifier {
     // Variables
     uint64 public constant TRANSFER_REQUEST_ID = 1;
     uint256 public TOKEN_AMOUNT_FOR_AIRDROP_PER_ID =

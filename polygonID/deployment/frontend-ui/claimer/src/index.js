@@ -14,7 +14,7 @@ const styles = {
 };
 
 // update with your contract address
-const deployedContractAddress = "0x73C73978cf5b81799AD589Ff22E1A2e9352D8e33";
+const deployedContractAddress = "0xA08fAA759Dc286611e6a1c42c857F6022A7bbcf0";
 
 // more info on query based requests: https://0xpolygonid.github.io/tutorials/wallet/proof-generation/types-of-auth-requests-and-proofs/#query-based-request
 const qrProofRequestJson = {
@@ -26,7 +26,7 @@ const qrProofRequestJson = {
       contract_address: deployedContractAddress,
       method_id: "b68967e2",
       chain_id: 80001,
-      network: "mumbai"
+      network: "polygon-mumbai"
     },
     reason: "airdrop participation",
     scope: [
@@ -37,14 +37,14 @@ const qrProofRequestJson = {
           query: {
             allowed_issuers: ["*"],
             req: {
-              Role: {
-                $in: 4
+              VerifiedPerson: {
+                $eq: 1
               }
             },
             schema: {
               url:
-                "https://s3.eu-west-1.amazonaws.com/polygonid-schemas/3a21c41d-3cdf-40fd-a872-5a9527def918.json-ld",
-              type: "POLYGONDAOMEMBER"
+              "https://s3.eu-west-1.amazonaws.com/polygonid-schemas/8826487d-8195-4b51-a926-cb4783835dd3.json-ld",
+              type: "ProofofExistence"
             }
           }
         }
@@ -68,7 +68,7 @@ export default class App extends React.Component {
         <p>
           Complete proof of polygon DAO member by issuing yourself a Polygon ID claim via{" "}
           <a
-            href="https://platform-test.polygonid.com/claim-link/20e11a0a-a4c4-438a-afea-f2fd0ff2cf1d"
+            href="https://platform-test.polygonid.com/claim-link/3c35f8cc-02e0-40c9-8de6-46c5f0d5051a"
             target="_blank"
             rel="noreferrer"
           >
