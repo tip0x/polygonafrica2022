@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: Unlicensed
+// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
 
@@ -84,7 +84,7 @@ contract HumanStandardToken is StandardToken, IChildToken {
         deployer = msg.sender;
         // Can't mint here, because minting in child chain smart contract's constructor not allowed
     }
-    
+
     function updateChildChainManager(address newChildChainManagerProxy) external {
         require(newChildChainManagerProxy != address(0), "Bad ChildChainManagerProxy address");
         require(msg.sender == deployer, "You're not allowed");
