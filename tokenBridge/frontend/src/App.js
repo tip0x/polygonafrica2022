@@ -28,8 +28,8 @@ const App = () => {
   const [tokenTypes, setTokenTypes] = useState([
 
     {
-      label: "ERC20",
-      value: "ERC20",
+      label: "PTTERC20",
+      value: "PTTERC20",
     },
 
   ]);
@@ -37,7 +37,7 @@ const App = () => {
     label: "Proof of Stake",
   });
   const [selectedToken, setSelectedToken] = useState({
-    label: "ERC20",
+    label: "PTTERC20",
   });
 
   const loadWeb3 = async () => {
@@ -58,8 +58,8 @@ const App = () => {
     const ethereumProvider = new WalletConnectProvider({
       host: config.ETH_RPC,
       callbacks: {
-        onConnect: console.log("zkevm connected"),
-        onDisconnect: console.log("zkevm disconnected!"),
+        onConnect: console.log("ethereum connected"),
+        onDisconnect: console.log("ethereum disconnected!"),
       },
     });
 
@@ -169,9 +169,9 @@ const App = () => {
         >
           </div>
           <div
-            id="ERC20"
+            id="PTTERC20"
             hidden={
-              selectedToken.label === "ERC20" &&
+              selectedToken.label === "PTTERC20" &&
               selectedBridgeOption.label === "Proof of Stake"
                 ? false
                 : true
