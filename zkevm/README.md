@@ -30,8 +30,8 @@
 - [X] Mint function is an internal function (This gets called by deposit function internally)
 
 * ChildChainManagerProxy (mumbai) : `0xb5505a6d998549090530911180f38aC5130101c6`
-* posRootERC20 (goerli) : `0x8199B05AE66c2Fa833E79A0cabA902803EB37510` (MTT)
-* posChildERC20 (mumbai) : `0x3838d31127871fbAa96fdC2EebBD945d702e4A45` (MTT)
+* posRootERC20 (mumbai) : `0xcC6a24983C3aec50402972Ddf3fd61b326ED1550` (ADAM)
+* posChildERC20 (zkevm) : `0xc0943f8aE2D1468A723CA77A79FaBEf7F548E2BF` (ADAM)
 
 ### References
 * https://github.com/maticnetwork/pos-portal 
