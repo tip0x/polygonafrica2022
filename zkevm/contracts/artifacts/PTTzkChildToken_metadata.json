@@ -8,11 +8,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_initialAmount",
-						"type": "uint256"
-					},
-					{
 						"internalType": "string",
 						"name": "_tokenName",
 						"type": "string"
@@ -150,6 +145,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "childChainManagerProxy",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "decimals",
 				"outputs": [
 					{
@@ -159,6 +167,37 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deployer",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "depositData",
+						"type": "bytes"
+					}
+				],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -254,6 +293,32 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newChildChainManagerProxy",
+						"type": "address"
+					}
+				],
+				"name": "updateChildChainManager",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"stateMutability": "payable",
 				"type": "receive"
 			}
@@ -271,7 +336,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"RootToken.sol": "SaddamZKRootToken"
+			"ChildToken.sol": "PTTzkChildToken"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -285,12 +350,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"RootToken.sol": {
-			"keccak256": "0x3b2543ac32d3830f2abbcf27fee6a2926e8722336d731c638007175c4f05e1a2",
+		"ChildToken.sol": {
+			"keccak256": "0xc8c73b7989ab7ebd86af05a585018a9257535786aa87e69f458783b793317650",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://390ebf9dd8734968efdafe6aff534bb1a8426c1a5f3691a1623c25121b420b2c",
-				"dweb:/ipfs/QmdTeJLv4JumJB2Hv4cGJgkS8frM3u8kncWKekYYVtWWFd"
+				"bzz-raw://c532b792eff96c90fe5cde456c342367ea11df1968e0565b1fb2cfa6ab942296",
+				"dweb:/ipfs/QmYtgwQgizudQV4SCwCQdSqQnSeifpEDRhSmL8iCNftEXU"
 			]
 		}
 	},

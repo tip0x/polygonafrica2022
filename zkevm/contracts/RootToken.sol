@@ -56,7 +56,7 @@ contract StandardToken is Token {
     uint256 public override totalSupply;
 }
 
-contract SaddamZKRootToken is StandardToken {
+contract PTTRootToken is StandardToken {
 
     receive() external payable {
         //if ether is sent to this address, send it back.

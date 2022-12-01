@@ -1,10 +1,10 @@
 module.exports = {
-  posRootERC20: "0xF9766A8C224911d207CA7C9e16319D781ccCa52e",
-  posChildERC20: "0xEb3F874cD55406c3F9c8af1E885C6867a03C7237",
-  ZKEVM_RPC: "https://public.zkevm-test.net:2083",
+  posRootERC20: "0x7b9Ba770a8030672774f31B6595E947596bfF2C9",
+  posChildERC20: "0x6DB297ce0140EB26aF5c4Fa955eF3963ef6aD96F",
+  ETH_RPC: "https://goerli.infura.io/v3/",
   MUMBAI_RPC: "https://matic-mumbai.chainstacklabs.com",
   VERSION: "mumbai",
   NETWORK: "testnet",
+  ETH_CHAINID: 5,
   MUMBAI_CHAINID: 80001,
-  ZKEVM_CHAINID: 1402,
 };

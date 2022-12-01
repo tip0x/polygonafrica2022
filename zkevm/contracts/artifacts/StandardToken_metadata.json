@@ -202,7 +202,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"RootToken.sol": "StandardToken"
+			"ChildToken.sol": "StandardToken"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -216,12 +216,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"RootToken.sol": {
-			"keccak256": "0x3b2543ac32d3830f2abbcf27fee6a2926e8722336d731c638007175c4f05e1a2",
+		"ChildToken.sol": {
+			"keccak256": "0x6f864c9e5616096ff3020778728c00bb0da6b327ef84408541200bc4a381f2a6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://390ebf9dd8734968efdafe6aff534bb1a8426c1a5f3691a1623c25121b420b2c",
-				"dweb:/ipfs/QmdTeJLv4JumJB2Hv4cGJgkS8frM3u8kncWKekYYVtWWFd"
+				"bzz-raw://e040b60871a2de5346843494fec8d5c71729241053041ec265576466e3877af3",
+				"dweb:/ipfs/Qmae3AuoBmcXkFGcZGQeMsgi83a2CrAxc9j5niKHRtZxuu"
 			]
 		}
 	},

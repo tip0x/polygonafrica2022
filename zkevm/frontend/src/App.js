@@ -16,7 +16,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   const [inputValue, setInputValue] = useState("");
   const [burnHash, setBurnHash] = useState("");
-  const [zkevmProvider, setZKevmProvider] = useState();
+  const [ethereumProvider, setEthereumProvider] = useState();
   const [mumbaiProvider, setMumbaiProvider] = useState();
   const [bridgeOptions] = useState([
     {
@@ -55,8 +55,8 @@ const App = () => {
 
   const loadBlockchainData = async () => {
     setLoading(true);
-    const zkevmProvider = new WalletConnectProvider({
-      host: config.ZKEVM_RPC,
+    const ethereumProvider = new WalletConnectProvider({
+      host: config.ETH_RPC,
       callbacks: {
         onConnect: console.log("zkevm connected"),
         onDisconnect: console.log("zkevm disconnected!"),
@@ -71,7 +71,7 @@ const App = () => {
       },
     });
 
-    setZKevmProvider(zkevmProvider);
+    setEthereumProvider(ethereumProvider);
     setMumbaiProvider(mumbaiProvider);
     const web3 = window.web3;
 
@@ -83,10 +83,10 @@ const App = () => {
 
     if (networkId === config.MUMBAI_CHAINID) {
       setLoading(false);
-    } else if (networkId === config.ZKEVM_CHAINID) {
+    } else if (networkId === config.ETH_CHAINID) {
       setLoading(false);
     } else {
-      window.alert(" switch to Polygon Mumbai or zkEVM network");
+      window.alert(" switch to Polygon Mumbai or Ethereum Goerli network");
     }
   };
   // posClientGeneral facilitates the operations like approve, deposit, exit
@@ -94,7 +94,7 @@ const App = () => {
     const maticPoSClient = new MaticPoSClient({
       network: config.NETWORK,
       version: config.VERSION,
-      maticProvider: zkevmProvider,
+      maticProvider: ethereumProvider,
       parentProvider: window.web3,
       parentDefaultOptions: { from: account },
       maticDefaultOptions: { from: account },
@@ -180,7 +180,7 @@ const App = () => {
             <button
               onClick={depositERC20}
               disabled={
-                Networkid !== 0 && Networkid === config.ZKEVM_CHAINID
+                Networkid !== 0 && Networkid === config.MUMBAI_CHAINID
                   ? true
                   : false
               }
@@ -191,7 +191,7 @@ const App = () => {
             <button
               onClick={burnERC20}
               disabled={
-                Networkid !== 0 && Networkid === config.MUMBAI_CHAINID
+                Networkid !== 0 && Networkid === config.ETH_CHAINID
                   ? true
                   : false
               }
@@ -202,7 +202,7 @@ const App = () => {
             <button
               onClick={exitERC20}
               disabled={
-                Networkid !== 0 && Networkid === config.MUMBAI_CHAINID
+                Networkid !== 0 && Networkid === config.ETH_CHAINID
                   ? false
                   : true
               }
@@ -212,7 +212,7 @@ const App = () => {
           
           <br />
             <label for="erc20-pos-inputValue">
-              {Networkid !== 0 && Networkid === config.MUMBAI_CHAINID
+              {Networkid !== 0 && Networkid === config.ETH_CHAINID
                 ? `Amount of tokens to deposit or burn transaction hash to exit`
                 : `Amount of tokens to burn`}
           </label>

@@ -58,7 +58,7 @@ contract StandardToken is Token {
     uint256 public override totalSupply;
 }
 
-contract HumanStandardToken is StandardToken, IChildToken {
+contract PTTChildToken is StandardToken, IChildToken {
 
     receive() external payable {
         //if ether is sent to this address, send it back.
