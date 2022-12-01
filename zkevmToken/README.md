@@ -9,11 +9,15 @@ The zkEVM harnesses the power of ZK proofs to reduce transaction costs and massi
 * **CONTRACT ADDRESS:** 0x88Fe282C4E2EE71da8793c87884417bFe1D1A81F
 ### TECHNICAL INFORMATION
 #### Contract Deployments
-* Install dependency `@remix-project/remixd`
-* run `yarn remixd -s /absolute/path/to/relearningculture/zkevmToken --remix-ide https://remix-alpha.ethereum.org/` 
-* Go to *https://remix-alpha.ethereum.org/*
-* Choose **localhost** from workspaces dropdown and click on **Connect**
-* You should be able to see the project folder in the remix file explorer panel
-
+- [X] Install dependency `@remix-project/remixd`
+- [X] run `yarn remixd -s /absolute/path/to/relearningculture/zkevmToken --remix-ide https://remix-alpha.ethereum.org/` 
+- [X] Go to *https://remix-alpha.ethereum.org/*
+- [X] Choose **localhost** from workspaces dropdown and click on **Connect**
+- [X] You should be able to see the project folder in the remix file explorer panel
+#### Network Configuration
+*   zkEVM public testnet
+*   RPC: `https://public.zkevm-test.net:2083`
+*   Chain ID: `1402`
+*   Block explorer URL: *https://explorer.public.zkevm-test.net/*
 ### References
 https://university.polygon.technology/

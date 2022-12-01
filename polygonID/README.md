@@ -25,13 +25,7 @@ Necessary but short introduction to give overview of the purpose and importance 
 
 - [X] PTTVerifier contract is a standard ERC20 verified and published on zkevm public testnet explorer *https://explorer.public.zkevm-test.net/address/0x603e34A7b86FD0084b718339C9935e62B63A02ab*
 
-- [X] `_beforeproofsubmit`, `_afterproofsubmit` and  `_beforetokentransfer` functions are present in the token contract to trigger imported `ZKPverifier` to return `SubmitZKPResponse` 
-### Network Configuration
-*   zkEVM public testnet
-*   RPC: `https://public.zkevm-test.net:2083`
-*   Chain ID: `1402`
-*   Block explorer URL: *https://explorer.public.zkevm-test.net/*
-
+- [X] `_beforeproofsubmit`, `_afterproofsubmit` and  `_beforetokentransfer` functions are present in the token contract to trigger imported `ZKPverifier` to return `SubmitZKPResponse`
 ### References
 * https://github.com/maticnetwork/pos-portal 
 * https://github.com/codingwithmanny/polygonid-on-chain-verification/

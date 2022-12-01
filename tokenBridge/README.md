@@ -1,5 +1,5 @@
 # Matic PoS (Proof-of-Stake) portal contracts
-## INTODUCTION
+## INTRODUCTION
 #### TOKEN INFORMATION
 * TOKEN NAME: Prime Toad Token
 * TOKEN SYMBOL: $PTT
