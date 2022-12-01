@@ -15,7 +15,6 @@ const App = () => {
   const [account, setAccount] = useState("");
   const [loading, setLoading] = useState(true);
   const [inputValue] = useState("");
-  // const [amount, setInputAmount] = useState("");
   const [burnHash, setBurnHash] = useState("");
   const [zkevmProvider, setZKevmProvider] = useState();
   const [mumbaiProvider, setMumbaiProvider] = useState();
@@ -27,10 +26,7 @@ const App = () => {
 
   ]);
   const [tokenTypes, setTokenTypes] = useState([
-    {
-      label: "Ether",
-      value: "Ether",
-    },
+
     {
       label: "ERC20",
       value: "ERC20",
@@ -41,7 +37,7 @@ const App = () => {
     label: "Proof of Stake",
   });
   const [selectedToken, setSelectedToken] = useState({
-    label: "Ether",
+    label: "ERC20",
   });
 
   const loadWeb3 = async () => {
@@ -118,43 +114,6 @@ const App = () => {
     return maticPoSClient;
   };
 
-  // POS ether functionality
-
-  const depositEther = async () => {
-    const maticPoSClient = posClientParent();
-    const x = inputValue * 1000000000000000000; // 18 decimals
-    const x1 = x.toString();
-
-    await maticPoSClient.depositEtherForUser(account, x1, {
-      from: account,
-    });
-  };
-
-  const burnEther = async () => {
-    const maticPoSClient = posClientChild();
-    const x = inputValue * 1000000000000000000;
-    const x1 = x.toString();
-    await maticPoSClient
-      .burnERC20(config.posChildWETH, x1, {
-        from: account,
-      })
-      .then((res) => {
-        console.log(res.transactionHash);
-        setBurnHash(res.transactionHash);
-      });
-  };
-
-  const exitEther = async () => {
-    const maticPoSClient = posClientParent();
-    await maticPoSClient
-      .exitERC20(inputValue, {
-        from: account,
-      })
-      .then((res) => {
-        console.log("exit o/p", res);
-      });
-  };
-
   // POS ERC20 functionality
 
   const depositERC20 = async () => {
@@ -203,56 +162,7 @@ const App = () => {
             selectedBridgeOption.label === "Proof of Stake" ? false : true
           }
         >
-          <div
-            id="Ether"
-            hidden={
-              selectedToken.label === "Ether" &&
-              selectedBridgeOption.label === "Proof of Stake"
-                ? false
-                : true
-            }
-          >
-            <button
-              onClick={depositEther}
-              disabled={
-                Networkid !== 0 && Networkid === config.ZKEVM_CHAINID
-                  ? true
-                  : false
-              }
-            >
-              Deposit
-            </button>
-
-            <button
-              onClick={burnEther}
-              disabled={
-                Networkid !== 0 && Networkid === config.MUMBAI_CHAINID
-                  ? true
-                  : false
-              }
-            >
-              burn
-            </button>
-
-            <button
-              onClick={exitEther}
-              disabled={
-                Networkid !== 0 && Networkid === config.MUMBAI_CHAINID
-                  ? false
-                  : true
-              }
-            >
-              exit
-            </button>
-
-            
-            <br />
-            <label for="pos-inputValue">
-              {Networkid !== 0 && Networkid === config.MUMBAI_CHAINID
-                ? `Amount in Ether for deposit or burn transaction hash to exit`
-                : `Amount of Ether to burn`}
-            </label>
-
+         
             <input
               id="pos-inputValue"
               type="text"
@@ -309,7 +219,7 @@ const App = () => {
             
           </div>
         </div>
-      </div>
+  
     );
   }
 
@@ -323,20 +233,12 @@ const App = () => {
             if (e.target.value === "POS") {
               setTokenTypes([
                 {
-                  label: "Ether",
-                  value: "Ether",
-                },
-                {
                   label: "ERC20",
                   value: "ERC20",
                 },
               ]);
             } else {
               setTokenTypes([
-                {
-                  label: "Ether",
-                  value: "Ether",
-                },
                 {
                   label: "ERC20",
                   value: "ERC20",
