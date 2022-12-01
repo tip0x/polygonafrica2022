@@ -1,4 +1,16 @@
 # Matic PoS (Proof-of-Stake) portal contracts
+## INTODUCTION
+#### TOKEN INFORMATION
+* TOKEN NAME: Prime Toad Token
+* TOKEN SYMBOL: $PTT
+### TECHNICAL INFORMATION
+#### Contract Deployments
+* Install dependency `@remix-project/remixd`
+* run `yarn remixd -s /absolute/path/to/relearningculture/token-creation --remix-ide https://remix-alpha.ethereum.org/` 
+* Go to *https://remix-alpha.ethereum.org/*
+* Choose **localhost** from workspaces dropdown and click on **Connect**
+* You should be able to see the project folder in the remix file explorer panel
+
 
 
 
