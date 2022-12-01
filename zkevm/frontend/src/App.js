@@ -14,7 +14,7 @@ const App = () => {
   const [Networkid, setNetworkid] = useState(0);
   const [account, setAccount] = useState("");
   const [loading, setLoading] = useState(true);
-  const [inputValue] = useState("");
+  const [inputValue, setInputValue] = useState("");
   const [burnHash, setBurnHash] = useState("");
   const [zkevmProvider, setZKevmProvider] = useState();
   const [mumbaiProvider, setMumbaiProvider] = useState();
@@ -152,6 +152,11 @@ const App = () => {
       });
   };
 
+
+  const onchange = (e) => {
+    setInputValue(e.target.value);
+  };
+
   if (loading === true) {
   } else {
     content = (
@@ -162,17 +167,6 @@ const App = () => {
             selectedBridgeOption.label === "Proof of Stake" ? false : true
           }
         >
-         
-            <input
-              id="pos-inputValue"
-              type="text"
-              placeholder="value"
-              name="inputValue"
-              value={inputValue}
-              onChange={onchange}
-              required
-            />
-            <p id="burnHash">{burnHash}</p>
           </div>
           <div
             id="ERC20"
@@ -214,11 +208,26 @@ const App = () => {
               }
             >
               exit
-            </button>
-
-            
-          </div>
-        </div>
+          </button>
+          
+          <br />
+            <label for="erc20-pos-inputValue">
+              {Networkid !== 0 && Networkid === config.MUMBAI_CHAINID
+                ? `Amount of tokens to deposit or burn transaction hash to exit`
+                : `Amount of tokens to burn`}
+          </label>
+          <input
+              id="erc20-pos-inputValue"
+              type="text"
+              placeholder="value"
+              name="inputValue"
+              value={inputValue}
+              onChange={onchange}
+              required
+            />
+            <p id="burnHash">{burnHash}</p>
+          </div>        
+     </div>
   
     );
   }
