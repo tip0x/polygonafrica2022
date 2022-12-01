@@ -7,6 +7,13 @@ The zkEVM harnesses the power of ZK proofs to reduce transaction costs and massi
 * **TOKEN SYMBOL:** $PTT
 * **TOTAL SUPPLY:** 100
 * **CONTRACT ADDRESS:** 0x88Fe282C4E2EE71da8793c87884417bFe1D1A81F
+#### INSTRUCTION
+- [X] Add goerli network to your metamask (*See network configuration below*)
+- [X] Add faucet (fake ether) to your wallet `https://goerlifaucet.com/`
+- [X] Add zkEVM network to your metamask (*See network configuration below*)
+- [X] Bridge ether from goerli to zkEVM to enable gas fee payment `https://public.zkevm-test.net/`
+- [X] Import token contract address into wallet on zkEVM network
+- [X] Request token from developer to test zkEVM `taptclub@gmail.com`
 ### TECHNICAL INFORMATION
 #### Contract Deployments
 - [X] Install dependency `@remix-project/remixd`
@@ -15,9 +22,14 @@ The zkEVM harnesses the power of ZK proofs to reduce transaction costs and massi
 - [X] Choose **localhost** from workspaces dropdown and click on **Connect**
 - [X] You should be able to see the project folder in the remix file explorer panel
 #### Network Configuration
-*   zkEVM public testnet
+**zkEVM public testnet**
 *   RPC: `https://public.zkevm-test.net:2083`
 *   Chain ID: `1402`
 *   Block explorer URL: *https://explorer.public.zkevm-test.net/*
+
+**Goerli public testnet**
+*   RPC:  `https://goerli.infura.io/v3/`
+*   Chain ID: `5`
+*   Block explorer URL: `https://goerli.etherscan.io`
 ### References
 https://university.polygon.technology/
