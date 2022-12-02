@@ -60,19 +60,20 @@ export default class App extends React.Component {
     return (
       <div style={styles.root}>
         <h2 style={styles.title}>
-          Claim Prime Toad Token ($PTT) airdrop on Polygon zkEVM
+          
+          Claim Prime Toad Token ($PTT) airdrop on Polygon Mumbai
         </h2>
         <p>
-          Mode of Verification: You must prove your role as a polygon DAO member to be eligible to mint token.
+          Mode of Verification: You must prove authentication of verified person to be eligible to mint token.
         </p>
         <p>
-          Complete proof of polygon DAO member by issuing yourself a Polygon ID claim via{" "}
+          Complete proof of verified person by issuing yourself a Polygon ID claim via{" "}
           <a
             href="https://platform-test.polygonid.com/claim-link/3c35f8cc-02e0-40c9-8de6-46c5f0d5051a"
             target="_blank"
             rel="noreferrer"
           >
-            Prime Toad Project
+            Prime Toad Claimer
           </a>{" "}
           </p>
           <p>
