@@ -1,5 +1,13 @@
 # POLYGON PROOF OF STAKE (POS) BRIDGE
 ## INTRODUCTION
+A bridge is basically a set of contracts that help in moving assets from the root chain to the child chain. There are several types of bridges to move assets between Ethereum and Polygon. But this project if focused on the type of bridge called the PoS Bridge or Proof of Stake bridge. 
+Proof of stake based assets provides PoS security, secured by a robust set of external validators and fast exit with one checkpoint interval.
+
+**Steps to use the PoS Bridge**
+
+Then, the first step to using the PoS bridge is mapping the Root Token and Child Token. It means that the token contract on the root chain and the token contract on the child chain have to maintain a connection (called mapping) to transfer assets between themselves.
+
+**Mapping tokens** : [https://mapper.polygon.technology/]
 #### TOKEN INFORMATION
 * TOKEN NAME: Prime Toad Token
 * TOKEN SYMBOL: $PTT
@@ -12,9 +20,6 @@
 * Go to *https://remix-alpha.ethereum.org/*
 * Choose **localhost** from workspaces dropdown and click on **Connect**
 * You should be able to see the project folder in the remix file explorer panel
-
-**Mapping tokens** : [https://mapper.polygon.technology/]
-
 ### Contract Deployments
 #### Standard requirement for mapped custom ERC20 token
 
