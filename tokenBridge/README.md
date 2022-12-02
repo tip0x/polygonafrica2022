@@ -35,9 +35,9 @@ CHAIN_ID 80001
 EXPLORER https://mumbai.polygonscan.com/
 
 #### ETHEREUM GOERLI
-RPC https://public.zkevm-test.net:2083
+RPC https://goerli.infura.io/v3/
 CHAIN_ID 5
-EXPLORER https://explorer.public.zkevm-test.net/
+EXPLORER https://goerli.etherscan.io
 
 
 
