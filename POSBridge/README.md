@@ -5,7 +5,7 @@ Proof of stake based assets provides PoS security, secured by a robust set of ex
 
 **Steps to use the PoS Bridge**
 
-Then, the first step to using the PoS bridge is mapping the Root Token and Child Token. It means that the token contract on the root chain and the token contract on the child chain have to maintain a connection (called mapping) to transfer assets between themselves.
+The first step to using the PoS bridge is mapping the Root Token and Child Token. It means that the token contract on the root chain and the token contract on the child chain have to maintain a connection (called mapping) to transfer assets between themselves.
 
 **Mapping tokens** : [https://mapper.polygon.technology/]
 #### TOKEN INFORMATION
