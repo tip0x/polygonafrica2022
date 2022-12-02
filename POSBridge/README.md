@@ -1,6 +1,6 @@
 # POLYGON PROOF OF STAKE (POS) BRIDGE
 ## INTRODUCTION
-A bridge is basically a set of contracts that help in moving assets from the root chain to the child chain. There are several types of bridges to move assets between Ethereum and Polygon. But this project if focused on the type of bridge called the PoS Bridge or Proof of Stake bridge. 
+A bridge is basically a set of contracts that help in moving assets from the root chain to the child chain. There are several types of bridges to move assets between Ethereum and Polygon. But this project is focused on the type of bridge called the PoS Bridge or Proof of Stake bridge. 
 Proof of stake based assets provides PoS security, secured by a robust set of external validators and fast exit with one checkpoint interval.
 
 **Steps to use the PoS Bridge**
