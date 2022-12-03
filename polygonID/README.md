@@ -11,8 +11,7 @@ This project aims to harness the power of this new technology by developing an e
 - [X] Complete identity verification by issuing yourself a Polygon ID claim via *https://platform-test.polygonid.com/claim-link/3c35f8cc-02e0-40c9-8de6-46c5f0d5051a* Scan QR code twice;
 * Verify ID
 * Claim ID
-- [X] navigate to frontend-ui folder using ``` cd /absolute/to/relearningculture/token-creation/deployment/frontend-ui/claimer``` in your terminal
-- [X] ``` yarn start``` to launch react webpage on **localhost** on *http://localhost:3000/* then scan QR code within Prime toad app to claim tokens
+- [X] go to `https://primetoadproject.netlify.app/` then scan QR code within Prime toad app to claim tokens
 - [X] Wait to generate proof, then connect and approve metamask wallet to get 5 PTT airdrop.
 #### TOKEN INFORMATION
 * TOKEN NAME: Prime Toad Token
