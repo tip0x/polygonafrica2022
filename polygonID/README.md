@@ -1,15 +1,19 @@
 # The African Prime Toad Project
-
-## INTRODUCTION
-Necessary but short introduction to give overview of the purpose and importance of implementing polygonID zero knowledge self-sovereign identity in deploying custom created tokens.
-### INSTRUCTIONS
+#   CLAIM TOKEN AIRDROP
+### INTRODUCTION
+Self-sovereign identity (SSI) can be described as the evolution or technological paradigm shift of internet identity and interestingly is one of the many key inventions of decentralized web3.0. 
+SSI is a new model of digital identity on the internet that implements how we render services, applications and identify who we are which is essential to build relationship of trust in order to access or protect private information.
+This project aims to harness the power of this new technology by developing an erc20 token symbolized as $PTT and distributing it to only individuals who verify their authenticity of existence, so this way only users who have access to the application gets to participate in the airdrop, please follow through.
+#### INSTRUCTIONS
 * To transact token across multiple wallet, you need to;
 
-- [X] Install PolygonID & Metamask in your device
-- [X] Complete identity verification by issuing yourself a Polygon ID claim via *https://platform-test.polygonid.com/claim-link/20e11a0a-a4c4-438a-afea-f2fd0ff2cf1d*
+- [X] Install PolygonID & Metamask on your device
+- [X] Complete identity verification by issuing yourself a Polygon ID claim via *https://platform-test.polygonid.com/claim-link/3c35f8cc-02e0-40c9-8de6-46c5f0d5051a* Scan QR code twice;
+* Verify ID
+* Claim ID
 - [X] navigate to frontend-ui folder using ``` cd /absolute/to/relearningculture/token-creation/deployment/frontend-ui/claimer``` in your terminal
-- [X] ``` yarn start``` to launch react webpage on **localhost** on *http://localhost:3000/* then scan QR code within Polygon ID app to claim tokens
-
+- [X] ``` yarn start``` to launch react webpage on **localhost** on *http://localhost:3000/* then scan QR code within Prime toad app to claim tokens
+- [X] Wait to generate proof, then connect and approve metamask wallet to get 5 PTT airdrop.
 #### TOKEN INFORMATION
 * TOKEN NAME: Prime Toad Token
 * TOKEN SYMBOL: $PTT
@@ -20,6 +24,9 @@ Necessary but short introduction to give overview of the purpose and importance 
 * Go to *https://remix-alpha.ethereum.org/*
 * Choose **localhost** from workspaces dropdown and click on **Connect**
 * You should be able to see the project folder in the remix file explorer panel
+* navigate to frontend-ui folder using ``` cd /absolute/to/relearningculture/token-creation/deployment/frontend-ui/claimer``` in your terminal
+*  ``` yarn start``` to launch react webpage on **localhost** on *http://localhost:3000/* then scan QR code within Prime toad app to claim tokens
+* Wait to generate proof, then connect and approve metamask wallet to get 5 PTT airdrop.
 
 #### PTTVerifier Contract Description
 
@@ -30,5 +37,3 @@ Necessary but short introduction to give overview of the purpose and importance 
 * https://github.com/maticnetwork/pos-portal 
 * https://github.com/codingwithmanny/polygonid-on-chain-verification/
 
-#### Connect to developer
-* https://twitter.com/tiptape0

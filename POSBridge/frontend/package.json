@@ -1,5 +1,5 @@
 {
-  "name": "saddam-zkevm",
+  "name": "ethereum-to-mumbai-bridge",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
