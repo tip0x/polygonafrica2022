@@ -242,15 +242,15 @@ const App = () => {
             if (e.target.value === "POS") {
               setTokenTypes([
                 {
-                  label: "ERC20",
-                  value: "ERC20",
+                  label: "PTTERC20",
+                  value: "PTTERC20",
                 },
               ]);
             } else {
               setTokenTypes([
                 {
-                  label: "ERC20",
-                  value: "ERC20",
+                  label: "PTTERC20",
+                  value: "PTTERC20",
                 },
               ]);
             }

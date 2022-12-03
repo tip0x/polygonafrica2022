@@ -9,9 +9,11 @@ The first step to using the PoS bridge is mapping the Root Token and Child Token
 
 **Mapping tokens** : [https://mapper.polygon.technology/]
 #### TOKEN INFORMATION
-* TOKEN NAME: Prime Toad Token
-* TOKEN SYMBOL: $PTT
-* TOTAL SUPPLY: 100
+* **TOKEN NAME:** Prime Toad Token
+* **TOKEN SYMBOL:** $PTT
+* **TOTAL SUPPLY:** 100
+**Build Link:** []
+
 ### TECHNICAL INFORMATION
 #### Contract Deployments
 
@@ -64,6 +66,7 @@ The first step to using the PoS bridge is mapping the Root Token and Child Token
 7. Your selected Goerli network account PTT balance will increase after transaction is mined.
 ### Programming Languages & Stack
 * Javascript
+* Typescript
 * Solidity
 * React
 #### REVIEW

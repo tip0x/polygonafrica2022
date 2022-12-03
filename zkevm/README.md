@@ -20,7 +20,7 @@ The zkEVM harnesses the power of ZK proofs to reduce transaction costs and massi
 - [X] run `yarn remixd -s /absolute/path/to/relearningculture/zkevmToken --remix-ide https://remix-alpha.ethereum.org/` 
 - [X] Go to *https://remix-alpha.ethereum.org/*
 - [X] Choose **localhost** from workspaces dropdown and click on **Connect**
-- [X] You should be able to see the project folder in the remix file explorer panel
+- [X] You should be able to see the project folder in the remix file explorer panel and deploy your own custom contracts.
 #### Network Configuration
 **zkEVM public testnet**
 *   RPC: `https://public.zkevm-test.net:2083`
