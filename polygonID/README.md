@@ -16,6 +16,7 @@ This project aims to harness the power of this new technology by developing an e
 #### TOKEN INFORMATION
 * TOKEN NAME: Prime Toad Token
 * TOKEN SYMBOL: $PTT
+* CONTRACT ADDRESS: `0xA08fAA759Dc286611e6a1c42c857F6022A7bbcf0`
 ### TECHNICAL INFORMATION
 #### Contract Deployments
 * Install dependency `@remix-project/remixd`
@@ -29,7 +30,7 @@ This project aims to harness the power of this new technology by developing an e
 
 #### PTTVerifier Contract Description
 
-- [X] PTTVerifier contract is a standard ERC20 verified and published on zkevm public testnet explorer *https://explorer.public.zkevm-test.net/address/0x603e34A7b86FD0084b718339C9935e62B63A02ab*
+- [X] PrimeToadIDVerifier contract is a standard ERC20 verified and published on mumbai public testnet explorer *https://mumbai.polygonscan.com/address/0xA08fAA759Dc286611e6a1c42c857F6022A7bbcf0/*
 
 - [X] `_beforeproofsubmit`, `_afterproofsubmit` and  `_beforetokentransfer` functions are present in the token contract to trigger imported `ZKPverifier` to return `SubmitZKPResponse`
 ### References
