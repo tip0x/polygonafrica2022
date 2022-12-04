@@ -6,7 +6,7 @@ The zkEVM harnesses the power of ZK proofs to reduce transaction costs and massi
 * **TOKEN NAME:** PrimeToadTokenZK
 * **TOKEN SYMBOL:** $PTT
 * **TOTAL SUPPLY:** 100
-* **CONTRACT ADDRESS:** 0x88Fe282C4E2EE71da8793c87884417bFe1D1A81F
+* **CONTRACT ADDRESS:** `0x88Fe282C4E2EE71da8793c87884417bFe1D1A81F`
 #### INSTRUCTION
 - [X] Add goerli network to your metamask (*See network configuration below*)
 - [X] Add faucet (fake ether) to your wallet `https://goerlifaucet.com/`
