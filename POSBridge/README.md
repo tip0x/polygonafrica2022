@@ -51,6 +51,7 @@ The first step to using the PoS bridge is mapping the Root Token and Child Token
 
 * Addresses in the src/config.js are the deployed root (PTTRootToken) and child (PTTChildToken) erc20 tokens respectively
 ## PoS Bridge
+*Request $PTT token from developer for testing* `taptclub@gmail.com`
 ### Transfer PTT from Ethereum network to Matic PoS
 
 1. Select Goerli network on MetaMask and refresh the page
