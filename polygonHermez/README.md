@@ -17,7 +17,7 @@ The zkEVM harnesses the power of ZK proofs to reduce transaction costs and massi
 ### TECHNICAL INFORMATION
 #### Contract Deployments
 - [X] Install dependency `@remix-project/remixd`
-- [X] run `yarn remixd -s /absolute/path/to/relearningculture/zkevmToken --remix-ide https://remix-alpha.ethereum.org/` 
+- [X] run `yarn remixd -s /absolute/path/to/relearningculture/polygonHermez --remix-ide https://remix-alpha.ethereum.org/` 
 - [X] Go to *https://remix-alpha.ethereum.org/*
 - [X] Choose **localhost** from workspaces dropdown and click on **Connect**
 - [X] You should be able to see the project folder in the remix file explorer panel and deploy your own custom contracts.

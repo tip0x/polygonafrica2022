@@ -18,7 +18,7 @@ The first step to using the PoS bridge is mapping the Root Token and Child Token
 #### Contract Deployments
 
 * Install dependency `@remix-project/remixd`
-* run `yarn remixd -s /absolute/path/to/relearningculture/tokenBridge --remix-ide https://remix-alpha.ethereum.org/` 
+* run `yarn remixd -s /absolute/path/to/relearningculture/polygonPOS --remix-ide https://remix-alpha.ethereum.org/` 
 * Go to *https://remix-alpha.ethereum.org/*
 * Choose **localhost** from workspaces dropdown and click on **Connect**
 * You should be able to see the project folder in the remix file explorer panel and deploy your own custom contracts.

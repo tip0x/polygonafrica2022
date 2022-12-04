@@ -20,11 +20,11 @@ This project aims to harness the power of this new technology by developing an e
 ### TECHNICAL INFORMATION
 #### Contract Deployments
 * Install dependency `@remix-project/remixd`
-* run `yarn remixd -s /absolute/path/to/relearningculture/token-creation --remix-ide https://remix-alpha.ethereum.org/` 
+* run `yarn remixd -s /absolute/path/to/relearningculture/polygonID --remix-ide https://remix-alpha.ethereum.org/` 
 * Go to *https://remix-alpha.ethereum.org/*
 * Choose **localhost** from workspaces dropdown and click on **Connect**
 * You should be able to see the project folder in the remix file explorer panel
-* navigate to frontend-ui folder using ``` cd /absolute/to/relearningculture/token-creation/deployment/frontend-ui/claimer``` in your terminal
+* navigate to frontend-ui folder using ``` cd /absolute/to/relearningculture/polygonID/deployment/frontend-ui/claimer``` in your terminal
 *  ``` yarn start``` to launch react webpage on **localhost** on *http://localhost:3000/* then scan QR code within Prime toad app to claim tokens
 * Wait to generate proof, then connect and approve metamask wallet to get 5 PTT airdrop.
 
