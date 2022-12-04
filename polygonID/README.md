@@ -40,6 +40,5 @@ This project aims to harness the power of this new technology by developing an e
 * Remix
 * Hardhat
 ### References
-* https://github.com/maticnetwork/pos-portal 
 * https://github.com/codingwithmanny/polygonid-on-chain-verification/
 
