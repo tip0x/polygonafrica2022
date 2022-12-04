@@ -12,7 +12,7 @@ The first step to using the PoS bridge is mapping the Root Token and Child Token
 * **TOKEN NAME:** Prime Toad Token
 * **TOKEN SYMBOL:** $PTT
 * **TOTAL SUPPLY:** 100
-**Build Link:** []
+#### **Live Link:** https://primetoadbridge.netlify.app/
 
 ### TECHNICAL INFORMATION
 #### Contract Deployments
