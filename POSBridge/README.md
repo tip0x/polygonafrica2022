@@ -59,8 +59,8 @@ The first step to using the PoS bridge is mapping the Root Token and Child Token
 #### Withdraw PTT from Matic PoS back into Ethereum
 1. Select Mumbai Matic network on MetaMask and refresh the page
 2. Choose "Proof Of Stake" and "PTTERC20" from the dropdowns
-3. Fill up the input control with the value to transfer to back to Ethereum.
-4. Click on Burn and select "Confirm" on MetaMask popup. Wait until transaction gets Mined. Copy the transaction hash. Additionally wait for 5-7 minutes until Polygon's state sync mechanism completes check pointing.
+3. Fill up the input control with the value to transfer back to Ethereum.
+4. Click on Burn and select "Confirm" on MetaMask popup. Wait until transaction gets Mined. Copy the transaction hash. Wait for  Additional 5-7 minutes until Polygon's state sync mechanism completes check pointing.
 5. Switch the network to Goerli (and refresh the page) and fill the input control with transaction hash.
 6. Click on Exit button and wait until transaction get mined.
 7. Your selected Goerli network account PTT balance will increase after transaction is mined.
@@ -69,10 +69,11 @@ The first step to using the PoS bridge is mapping the Root Token and Child Token
 * Typescript
 * Solidity
 * React
+* Remix
 #### REVIEW
-This project was built out of curiosity and during development there were limitations on the architecture of polygon design that restriction implementation of polygonID and zkEVM into the project.
+This project was built out of curiosity and during development there were limitations on the architecture of polygon design that restricted implementation of polygonID and zkEVM into the project.
 1.  **Building polygonID on top of zkEVM**
-The state of the art self-sovereign identity polygonID has been built on mumbai chain, where interaction with contracts during zero-knowledge proof request makes use of a constant validator's address that is peculiar to mumbai network, and if a developer aims to build similar infrastructure deployed to zkEVM, it encounters bugs, as the validator's address is unable to interact with a contract on a different chain.
+The state of the art self-sovereign identity polygonID has been built on mumbai chain, where interaction with contracts during zero-knowledge proof request makes use of a constant validator's address that is peculiar to mumbai network, and if a developer aims to build similar infrastructure deployed to zkEVM, it encounters bugs, as the validator's address is unable to interact with a contract on a different chain. Possible approach to solving this, is to deploy a validator contract to zkEVM.
 
 ### References
 * https://github.com/maticnetwork/pos-portal

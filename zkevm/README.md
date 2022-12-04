@@ -31,5 +31,7 @@ The zkEVM harnesses the power of ZK proofs to reduce transaction costs and massi
 *   RPC:  `https://goerli.infura.io/v3/`
 *   Chain ID: `5`
 *   Block explorer URL: `https://goerli.etherscan.io`
+### Programming Languages & Stack
+* Remix
 ### References
 https://university.polygon.technology/

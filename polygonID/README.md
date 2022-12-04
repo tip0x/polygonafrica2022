@@ -32,7 +32,14 @@ This project aims to harness the power of this new technology by developing an e
 
 - [X] PrimeToadIDVerifier contract is a standard ERC20 verified and published on mumbai public testnet explorer *https://mumbai.polygonscan.com/address/0xA08fAA759Dc286611e6a1c42c857F6022A7bbcf0/*
 
-- [X] `_beforeproofsubmit`, `_afterproofsubmit` and  `_beforetokentransfer` functions are present in the token contract to trigger imported `ZKPverifier` to return `SubmitZKPResponse`
+- [X] `_beforeproofsubmit`, `_afterproofsubmit` and  `_beforetokentransfer` functions are present in the token contract to trigger imported `ZKPverifier` to return `SubmitZKPResponse`.
+### Programming Languages & Stack
+* Javascript
+* Typescript
+* Solidity
+* React
+* Remix
+* Hardhat
 ### References
 * https://github.com/maticnetwork/pos-portal 
 * https://github.com/codingwithmanny/polygonid-on-chain-verification/
