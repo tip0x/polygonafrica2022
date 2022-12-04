@@ -39,11 +39,13 @@ The first step to using the PoS bridge is mapping the Root Token and Child Token
 
 * **RPC:** https://matic-mumbai.chainstacklabs.com
 * **CHAIN_ID:** 80001
+* **SYMBOL** MATIC
 * **EXPLORER:** https://mumbai.polygonscan.com/
 #### ETHEREUM GOERLI
 
 * **RPC:** https://goerli.infura.io/v3/
 * **CHAIN_ID:** 5
+* **SYMBOL** ETH
 * **EXPLORER:** https://goerli.etherscan.io
 ### Config
 
