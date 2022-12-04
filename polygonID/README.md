@@ -1,5 +1,4 @@
-# The African Prime Toad Project
-#   CLAIM TOKEN AIRDROP
+# POLYGON ID (SELF-SOVEREIGN IDENTITY)
 ### INTRODUCTION
 Self-sovereign identity (SSI) can be described as the evolution or technological paradigm shift of internet identity and interestingly is one of the many key inventions of decentralized web3.0. 
 SSI is a new model of digital identity on the internet that implements how we render services, applications and identify who we are which is essential to build relationship of trust in order to access or protect private information.
